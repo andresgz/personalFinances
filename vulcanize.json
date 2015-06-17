@@ -1,0 +1,19 @@
+{
+	"polyfill": "/components/webcomponentsjs/webcomponents.min.js",
+    "imports": [
+        "/components/polymer/polymer.html",
+        "/components/paper-button/paper-button.html",
+        "/components/paper-header-panel/paper-header-panel.html",
+        "/components/paper-toolbar/paper-toolbar.html",
+        "/components/paper-checkbox/paper-checkbox.html",
+        "/components/paper-input/paper-input.html",
+        "/components/paper-item/paper-item.html",
+        "/components/paper-dialog/paper-dialog.html",
+        "/components/paper-dialog-behavior/paper-dialog-behavior.html",
+        "/components/paper-item/paper-item-body.html",
+        "/components/iron-icon/iron-icon.html",
+        "/components/paper-icon-button/paper-icon-button.html",
+        "/components/iron-icons/iron-icons.html",
+        "/components/paper-fab/paper-fab.html"
+    ]
+}

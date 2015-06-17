@@ -1,0 +1,17 @@
+<template name="days">
+	{{#each days}}
+		{{> day}}
+	{{/each}}
+</template>
+
+<template name="day">
+ 	<paper-item 
+ 		role="listitem" 
+ 		class="x-scope paper-item-0"
+ 		day="{{day.number}}">
+        <paper-item-body two-line>
+            <div>{{money}}</div>
+            <div secondary="">{{day.name}} {{day.number}}</div>
+        </paper-item-body>
+  	</paper-item>
+</template>

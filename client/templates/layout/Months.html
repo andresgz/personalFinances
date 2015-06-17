@@ -1,0 +1,14 @@
+<template name="Months">
+    {{#each months}}
+    	{{> month}}
+    {{/each}}
+</template>
+
+<template name="month">
+    <paper-item role="listitem" class="x-scope paper-item-0" month="{{month}}" name="{{name}}">
+        <paper-item-body two-line>
+            <div>{{money}}</div>
+            <div secondary="">{{name}}</div>
+        </paper-item-body>
+  	</paper-item>
+</template>
