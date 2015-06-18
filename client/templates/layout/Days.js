@@ -1,42 +1,9 @@
 var month = 100000; 
 Template.days.helpers({
-	days: [
-		{
-			day:{
-				number: 6,
-				name:'Viernes'
-			},
-			money:-200
-		},
-		{
-			day:{
-				number: 7,
-				name:'Sabado'
-			},
-			money:100
-		},
-		{
-			day:{
-				number: 8,
-				name:'Domingo'
-			},
-			money:500
-		},
-		{
-			day:{
-				number: 9,
-				name:'Lunes'
-			},
-			money:-150
-		},
-		{
-			day:{
-				number: 10,
-				name:'Martes'
-			},
-			money:-1170
-		}
-	]
+	days: function() {
+		return Session.get('days');
+		 // days;
+	}
 });
 
 Template.days.events({
@@ -48,5 +15,26 @@ Template.days.events({
 });
 
 Template.days.onRendered(function() {
+	var year = new Date().getFullYear(),
+		dayOfWeek,
+		days = [],
+		that = this;
+	for(var day = 1; day <= new Date(year, this.data.month, 0).getDate(); day++) {
+		var date = {year: year, month: this.data.month - 1, day: day };
+		dayOfWeek =  Calendar.getDayName(new Date(year, this.data.month, day).getDay());
+		console.log(dayOfWeek, day)
+		Meteor.call('getDayExpenses', date, function (e, r) {
+			if(!e){
+				days.push({
+					money: r[0].total ? r[0].total : 0, 
+					day: {
+						number: r[0].day,
+						name: Calendar.getDayName(new Date(year, that.data.month, r[0].day).getDay()) + " " + r[0].day
+					}
+				});
+				Session.set('days', days);
+			}
+		});
+	}
 	month = this.data.month;
 })

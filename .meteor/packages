@@ -8,3 +8,4 @@ meteor-platform
 differential:vulcanize
 iron:router
 reactive-var
+meteorhacks:aggregate

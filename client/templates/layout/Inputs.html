@@ -2,7 +2,7 @@
 	<paper-fab icon="add"></paper-fab>
     <paper-dialog>
 		<h2>Agregar entrada</h2>
-		<paper-input id="amount" label="Cantidad" allowed-pattern="[0-9]" prevent-invalid-input></paper-input>
+		<paper-input id="amount" label="Cantidad" allowed-pattern="[-0-9]" prevent-invalid-input></paper-input>
 		<paper-input id="description" label="Descripción" allowed-pattern="[0-9 a-zA-Z,.-/]" prevent-invalid-input></paper-input>
 		<div class="buttons">
 			<paper-button dialog-dismiss>Cancel</paper-button>
@@ -19,7 +19,7 @@
 		role="listitem"
 		class="x-cope paper-item-0">
 		<paper-item-body two-line>
-			<div>{{money}}</div>
+			<div>{{amount}}</div>
 			<div secondary="">{{description}}</div>
 		</paper-item-body>
 	</paper-item>
