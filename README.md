@@ -1,7 +1,7 @@
 ##Personal finances meteor test app
 
 ###Instalation
-1. Install [meteor]([https://www.meteor.com/)
+1. Install [meteor](https://www.meteor.com/)
 2. Install [bower](http://bower.io/)
 2. `$ git clone https://github.com/andresfelipemendez/personalFinances.git`
 2. `$ bower install`
