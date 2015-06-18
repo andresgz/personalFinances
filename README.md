@@ -1,11 +1,18 @@
-Personal finances meteor test app
+##Personal finances meteor test app
 
-Exploring 
- 	- Mongo aggregations
- 	- polymer 1
- 	- iron router path variables
- 	- asyncrony 
+###Instalation
+1. Install [meteor]([https://www.meteor.com/)
+2. Install [bower](http://bower.io/)
+2. `$ git clone https://github.com/andresfelipemendez/personalFinances.git`
+2. `$ bower install`
+3. `$ meteor run`
 
-ToExplore
-	- promises
-	- mobile builds
+###Exploring 
+* [Mongo aggregations](https://www.youtube.com/watch?v=9KErWTkGgUk)
+* [Polymer 1](https://www.polymer-project.org/1.0/)
+* Iron:router path variables
+* Asyncrony
+
+###ToExplore
+* promises
+* mobile builds
