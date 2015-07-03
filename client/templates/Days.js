@@ -1,8 +1,8 @@
 var month = 100000; 
 Template.days.helpers({
 	days: function() {
+        // Asincronia
 		return Session.get('days');
-		 // days;
 	}
 });
 

@@ -4,7 +4,6 @@ App.info({
   version: 0.01,
   website: 'domain.com'
 });
-
 //App.icons({
 //    iphone:        'resources/Icon/iphone.png',
 //    iphone_2x:     'resources/Icon/iphone_2x.png',
@@ -16,7 +15,6 @@ App.info({
 //    android_hdpi:  'resources/Icon/android_hdpi.png',
 //    android_xhdpi: 'resources/Icon/android_xhdpi.png'
 //})
-//
 //App.launchScreens({
 //    iphone:                  'resources/SplashScreen/iphone.png',
 //    iphone_2x:               'resources/SplashScreen/iphone_2x.png',

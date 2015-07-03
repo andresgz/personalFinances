@@ -26,7 +26,6 @@ Template.Months.helpers({
 
 Template.month.helpers({
 	name: function() {
-		console.log(this, Calendar.getMonthName(this.month));
 		return Calendar.getMonthName(this.month);
 	}
 });

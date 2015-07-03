@@ -1,9 +1,11 @@
 <template name="Layout">
 	<paper-header-panel class="flex">
     <paper-toolbar>
+        <!-- Helper -->
       <div>{{title}}</div>
     </paper-toolbar>
     <div>
+        <!--Carga los templates que entrega el router-->
     	{{> yield}}
     </div>
   </paper-header-panel>

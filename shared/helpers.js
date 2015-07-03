@@ -1,3 +1,15 @@
+// Ambos
+console.log(Meteor.isClient, Meteor.isServer/*, Meteor.isCordova*/);
+
+// Prueba
+// if(Meteor.isClient) {
+// 	Console.log("Soy cliente")
+// }
+// if(Meteor.isServer) {
+// 	Console.log("Soy servidor")
+// }
+
+// Ayuda / Objeto Global
 Calendar = {
 	getMonthName : function(number) {
 		var name;
