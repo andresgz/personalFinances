@@ -1,5 +1,7 @@
 ##Personal finances meteor test app
 
+##[Preview](http://personalfinances.meteor.com)
+
 ###Instalation
 1. Install [meteor](https://www.meteor.com/)
 2. Install [bower](http://bower.io/)
